@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" loading="lazy" src="/image/logo.webp" alt="Rader">
+        </a>
+    
+         <!--begyndelse på kode til search bar-->
+         <div class="search-container">
+            <div class="search-wrapper">
+                <button class="search-icon" onclick="toggleSearch()"><img class="billede-search" loading="lazy" src="image/search.png" alt="search"></button>
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search..."
+                    id="searchInput"
+                />
+            </div>
+        </div>
+    
+        <script>
+            function toggleSearch() {
+                const input = document.getElementById('searchInput');
+                // Toggle synlighed af input
+                if (input.classList.contains('visible')) {
+                    input.classList.remove('visible');
+                    input.style.display = 'none';
+                } else {
+                    input.classList.add('visible');
+                    input.style.display = 'inline-block';
+                    input.focus();
+                }
+               
+            }
+        </script>
+        <!--sluttning på kode til search bar-->
+
+        <!-- Skjult checkbox til at styre burger-menuen -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+    
+        <nav id="nav-menu">
+          <ul>
+            <li><a href="event.html">Event Kalender</a></li>
+            <li><a href="konto.html">Konto</a></li>
+            <li><a href="forum.html">Forum & Mindedeling</a></li>
+            <li><a href="blog.html">Blog & Podcast</a></li>
+          </ul>
+        </nav>
+      </header>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#2D457A" fill-opacity="1" d="M0,32L80,48C160,64,320,96,480,90.7C640,85,800,43,960,37.3C1120,32,1280,64,1360,80L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+
+      <!--her slutter header-->
+
+      <h1 class="event-rubrik">Forum <br> Mindedeling</h1>
+      <section class="flexrow-wrapper">
+        <div class="box-forum">
+            <button class="knap-forum">Forum</button>
+            <img class="vindu" loading="lazy" src="image/forum-menu.png" alt="forum">
+        </div>
+
+        <div class="box-minde">
+            <button class="knap-minde">Mindedeling</button>
+            <img class="vindu2" loading="lazy" src="image/minde-menu.png" alt="minder">
+        </div>
+      </section>
+
+      <!--her starter footer-->
+      <svg class="mywave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#2D457A" fill-opacity="1" d="M0,0L30,5.3C60,11,120,21,180,48C240,75,300,117,360,154.7C420,192,480,224,540,234.7C600,245,660,235,720,218.7C780,203,840,181,900,154.7C960,128,1020,96,1080,101.3C1140,107,1200,149,1260,170.7C1320,192,1380,192,1410,192L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+      <footer class="footerbox">
+        <div class="footer-text">
+           <p class="footer-linje1">Kontakt:</p>
+           <p class="footer-linje2">booking(@)radarlive.dk kontakt(@)radarlive.dk</p>
+           <p class="footer-linje3">Radar Karen Wegeners Gade 6 DK 8000 Aarhus C Telefon +45 8676 0344</p>
+         </div>
+         <div class="footer-icons">
+             <div class="icon">
+                 <a href="#"><img loading="lazy" src="/image/youtube.png" alt="youtube"></a>
+                 <a href="#"><img loading="lazy" src="/image/facebook.png" alt="facebook"></a>
+                 <a href="#"><img loading="lazy" src="/image/instagram.png" alt="instagram"></a>
+             </div>
+         </div>
+       </footer> 
+</body>
+</html>
